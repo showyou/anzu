@@ -192,7 +192,7 @@ def analyzeReply2(x, session, table, regexes):
 
             break
     if( d.user != "" ):
-        print "append", d.user, d.text
+        print "append", d.user
         session.add(d)
     session.commit()
     #@がきた時の応答はあとで考える(自動学習させる)
